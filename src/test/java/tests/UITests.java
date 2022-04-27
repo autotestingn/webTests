@@ -9,8 +9,8 @@ import utils.Util;
 
 
 public class UITests extends BaseTest {
-    @Test(description = "Проверка нажатия на блок пользователя с id {rnd} и открытия страницы для этого пользователя")
-    public void clickUserBlockByRandomId1() {
+    @Test(description = "Проверка нажатия на блок пользователя с id и открытия страницы для этого пользователя")
+    public void clickUserBlockByRandomId1() throws InterruptedException {
         UserListPage mainPage = new UserListPage(driver);
         mainPage.open();
         UserBlock userBlock = new UserBlock(driver);
@@ -19,10 +19,11 @@ public class UITests extends BaseTest {
         String hostname = System.getProperty("frontHostname") + ":" + System.getProperty("frontPort") + "/";
         UserPage userPage = userBlock.clickUserBlockByUserId(rnd);
         userPage.pageUrlShouldBe(hostname + rnd);
+        Thread.sleep(1000);
     }
 
-    @Test(description = "Проверка нажатия на блок пользователя с id {rnd} и открытия страницы для этого пользователя")
-    public void clickUserBlockByRandomId2() {
+    @Test(description = "Проверка нажатия на блок пользователя с id и открытия страницы для этого пользователя")
+    public void clickUserBlockByRandomId2() throws InterruptedException {
         UserListPage mainPage = new UserListPage(driver);
         mainPage.open();
         UserBlock userBlock = new UserBlock(driver);
@@ -31,10 +32,11 @@ public class UITests extends BaseTest {
         String hostname = System.getProperty("frontHostname") + ":" + System.getProperty("frontPort") + "/";
         UserPage userPage = userBlock.clickUserBlockByUserId(rnd);
         userPage.pageUrlShouldBe(hostname + rnd);
+        Thread.sleep(1000);
     }
 
-    @Test(description = "Проверка нажатия на блок пользователя с id {rnd} и открытия страницы для этого пользователя")
-    public void clickUserBlockByRandomId3() {
+    @Test(description = "Проверка нажатия на блок пользователя с id и открытия страницы для этого пользователя")
+    public void clickUserBlockByRandomId3() throws InterruptedException {
         UserListPage mainPage = new UserListPage(driver);
         mainPage.open();
         UserBlock userBlock = new UserBlock(driver);
@@ -43,10 +45,11 @@ public class UITests extends BaseTest {
         String hostname = System.getProperty("frontHostname") + ":" + System.getProperty("frontPort") + "/";
         UserPage userPage = userBlock.clickUserBlockByUserId(rnd);
         userPage.pageUrlShouldBe(hostname + rnd);
+        Thread.sleep(1000);
     }
 
-    @Test(description = "Проверка нажатия на блок пользователя с id {rnd} и открытия страницы для этого пользователя")
-    public void clickUserBlockByRandomId4() {
+    @Test(description = "Проверка нажатия на блок пользователя с id и открытия страницы для этого пользователя")
+    public void clickUserBlockByRandomId4() throws InterruptedException {
         UserListPage mainPage = new UserListPage(driver);
         mainPage.open();
         UserBlock userBlock = new UserBlock(driver);
@@ -55,10 +58,11 @@ public class UITests extends BaseTest {
         String hostname = System.getProperty("frontHostname") + ":" + System.getProperty("frontPort") + "/";
         UserPage userPage = userBlock.clickUserBlockByUserId(rnd);
         userPage.pageUrlShouldBe(hostname + rnd);
+        Thread.sleep(1000);
     }
 
-    @Test(description = "Проверка нажатия на блок пользователя с id {rnd} и открытия страницы для этого пользователя")
-    public void clickUserBlockByRandomId5() {
+    @Test(description = "Проверка нажатия на блок пользователя с id и открытия страницы для этого пользователя")
+    public void clickUserBlockByRandomId5() throws InterruptedException {
         UserListPage mainPage = new UserListPage(driver);
         mainPage.open();
         UserBlock userBlock = new UserBlock(driver);
@@ -67,10 +71,11 @@ public class UITests extends BaseTest {
         String hostname = System.getProperty("frontHostname") + ":" + System.getProperty("frontPort") + "/";
         UserPage userPage = userBlock.clickUserBlockByUserId(rnd);
         userPage.pageUrlShouldBe(hostname + rnd);
+        Thread.sleep(1000);
     }
 
-    @Test(description = "Проверка нажатия на блок пользователя с id {rnd} и открытия страницы для этого пользователя")
-    public void clickUserBlockByRandomId6() {
+    @Test(description = "Проверка нажатия на блок пользователя с id и открытия страницы для этого пользователя")
+    public void clickUserBlockByRandomId6() throws InterruptedException {
         UserListPage mainPage = new UserListPage(driver);
         mainPage.open();
         UserBlock userBlock = new UserBlock(driver);
@@ -79,10 +84,11 @@ public class UITests extends BaseTest {
         String hostname = System.getProperty("frontHostname") + ":" + System.getProperty("frontPort") + "/";
         UserPage userPage = userBlock.clickUserBlockByUserId(rnd);
         userPage.pageUrlShouldBe(hostname + rnd);
+        Thread.sleep(1000);
     }
 
-    @Test(description = "Проверка нажатия на блок пользователя с id {rnd} и открытия страницы для этого пользователя")
-    public void clickUserBlockByRandomId7() {
+    @Test(description = "Проверка нажатия на блок пользователя с id и открытия страницы для этого пользователя")
+    public void clickUserBlockByRandomId7() throws InterruptedException {
         UserListPage mainPage = new UserListPage(driver);
         mainPage.open();
         UserBlock userBlock = new UserBlock(driver);
@@ -91,5 +97,6 @@ public class UITests extends BaseTest {
         String hostname = System.getProperty("frontHostname") + ":" + System.getProperty("frontPort") + "/";
         UserPage userPage = userBlock.clickUserBlockByUserId(rnd);
         userPage.pageUrlShouldBe(hostname + rnd);
+        Thread.sleep(1000);
     }
 }
